@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let array = [-3,5,9,11,-6,-9,4];
+  let n = +prompt('Nhập giá trị muốn kiểm tra:');
+  let i = 0;
+  while (i < (array.length)) {
+    if (n != (array[i])) {
+      i++;
+    }
+    else {
+      alert(`${n} nằm tại vị trí thứ ${i+1} trong mảng`);
+      break;
+    }
+  }
+  if (i>=(array.length)) {
+    alert(`${n} không nằm trong mảng`);
+  }
+</script>
+</body>
+</html>
